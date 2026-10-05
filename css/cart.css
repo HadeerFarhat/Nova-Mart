@@ -1,0 +1,94 @@
+/* ===== NovaMart - Original Design System ===== */
+
+/* ===== Header ===== */
+
+/* Nav categories */
+
+/* ===== Hero ===== */
+
+/* ===== Sections ===== */
+
+/* Category Grid */
+
+/* Product Grid */
+
+/* Filters bar */
+
+/* Product Detail */
+
+/* Cart & Wishlist */
+
+.cart-table {
+  width: 100%;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 100px 1fr auto auto auto;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.cart-item-name {
+  font-weight: 600;
+}
+
+/* Auth forms */
+
+/* Checkout */
+
+/* Footer */
+
+/* Empty state */
+
+/* Toast */
+
+/* Modal overlay */
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .cart-item {
+    grid-template-columns: 70px 1fr;
+    gap: 12px;
+  }
+  .cart-item .item-total,
+.cart-item .remove-btn {
+    grid-column: 2;
+  }
+}
+
+/* Utility */
+
+.fw-bold { font-weight: 700; }
+
+/* ===== Dark Theme ===== */
+
+[data-theme="dark"] .cart-item {
+  background: var(--bg-card);
+  border-color: var(--border);
+}
+
+
+/* Theme handoff for page-specific legacy rules */
+[data-theme="dark"] .delivery-section,
+[data-theme="dark"] .category-hero,
+[data-theme="dark"] .reviews-section,
+[data-theme="dark"] .review-item,
+[data-theme="dark"] .auth-container,
+[data-theme="dark"] .cart-table,
+[data-theme="dark"] .cart-summary,
+[data-theme="dark"] .payment-form { color: var(--text); }

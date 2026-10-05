@@ -1,0 +1,488 @@
+/* ===== NovaMart - Original Design System ===== */
+
+/* ===== Header ===== */
+
+/* Nav categories */
+
+/* ===== Hero ===== */
+
+.btn-secondary {
+  background: var(--secondary);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-hover);
+}
+
+/* ===== Sections ===== */
+
+/* Category Grid */
+
+/* Product Grid */
+
+/* Filters bar */
+
+/* Product Detail */
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+
+.detail-img {
+  aspect-ratio: 1;
+  background: #f1f5f9;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.detail-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-info h1 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.detail-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.detail-price {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.detail-old {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  text-decoration: line-through;
+  margin-bottom: 16px;
+}
+
+.detail-desc {
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Cart & Wishlist */
+
+/* Auth forms */
+
+/* Checkout */
+
+/* Footer */
+
+/* Empty state */
+
+/* Toast */
+
+/* Modal overlay */
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Utility */
+
+/* ===== Dark Theme ===== */
+
+/* Clearance badge */
+
+/* Secure payment box */
+
+/* ===== Enhanced Product Cards ===== */
+
+/* Hero polish */
+
+/* Section backgrounds alternating */
+
+/* Footer location highlight */
+
+/* Better category cards */
+
+/* Dark theme product desc */
+
+/* ===== Side Navigation ===== */
+
+/* ===== Premium Hero ===== */
+
+/* ===== About Page ===== */
+
+/* ===== Delivery Cards ===== */
+
+/* Header layout fix for menu btn */
+
+/* ===== Product Detail Enhanced ===== */
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  align-items: start;
+}
+
+.detail-gallery {
+  position: relative;
+}
+
+.detail-img {
+  aspect-ratio: 1;
+  background: linear-gradient(145deg, #f1f5f9, #e2e8f0);
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+[data-theme="dark"] .detail-img {
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+}
+
+.detail-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-discount-badge {
+  position: absolute;
+  top: 16px;
+  inset-inline-start: 16px;
+  background: #ef4444;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.detail-title {
+  font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 8px 0 14px;
+  color: var(--text);
+}
+
+.detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin-bottom: 18px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  align-items: center;
+}
+
+.stock-in { color: #16a34a; font-weight: 600; }
+
+.stock-out { color: #dc2626; font-weight: 600; }
+
+.detail-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.detail-price-row .detail-price {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin: 0;
+}
+
+.detail-price-row .detail-old {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  text-decoration: line-through;
+  margin: 0;
+}
+
+.detail-save {
+  background: #fef3c7;
+  color: #b45309;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+[data-theme="dark"] .detail-save {
+  background: #78350f;
+  color: #fde68a;
+}
+
+.detail-desc {
+  color: var(--text-muted);
+  line-height: 1.75;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.detail-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 8px 0 20px;
+}
+
+.detail-qty-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.qty-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.btn-lg {
+  min-width: 140px;
+}
+
+.btn-secondary {
+  background: var(--secondary) !important;
+  color: #0f172a !important;
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-hover) !important;
+  color: #fff !important;
+}
+
+.detail-perks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 16px;
+  background: var(--bg);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.perk {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Ensure all interactive elements work */
+
+@media (max-width: 768px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 20px;
+  }
+  .detail-actions {
+    flex-direction: column;
+  }
+  .detail-perks {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Clean section backgrounds */
+
+/* Fix logo next to menu */
+
+/* ===== Integrated Sticky Nav ===== */
+
+/* ===== Promo Hero with product collage ===== */
+
+/* ===== Category cards with real images ===== */
+
+/* Category page hero */
+
+/* Related products section */
+
+/* Logo always LTR so name never reverses in Arabic */
+
+/* Category images - cover black bars */
+
+.detail-img img {
+  object-fit: cover;
+  object-position: center;
+  background: #f1f5f9;
+}
+
+[data-theme="dark"] .detail-img img {
+  background: #1e293b;
+}
+
+/* Qty control force visual order */
+
+/* ===== Professional polish ===== */
+
+/* Script load order note: products → lang/en → lang/ar → app */
+
+/* ===== Sticky navigation bar (header + categories) ===== */
+
+/* Mobile UX */
+
+/* Smooth interactions */
+
+.detail-img img {
+  object-fit: cover;
+  background: #f1f5f9;
+}
+
+/* Loading feel */
+
+/* Sticky category strip inside header */
+
+/* ===== Brighter lighting & polish ===== */
+
+/* Horizontal swipe feel for category nav */
+
+/* Customer reviews */
+
+.reviews-section {
+  margin-top: 32px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: var(--shadow);
+}
+
+.reviews-section h3 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.review-list {
+  display: grid;
+  gap: 16px;
+}
+
+.review-item {
+  display: flex;
+  gap: 14px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #f1f5f9;
+}
+
+.review-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.review-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.review-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.review-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 2px 0 8px;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #334155;
+}
+
+[data-theme="dark"] .reviews-section,
+[data-theme="dark"] .review-item {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .review-text {
+  color: #cbd5e1;
+}
+
+/* reviews: initials only — never use product/trainer photos */
+
+.review-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #fff !important;
+  background-image: none !important;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.review-item img {
+  display: none !important; /* block any accidental images in reviews */
+}
+
+
+/* Theme handoff for page-specific legacy rules */
+[data-theme="dark"] .delivery-section,
+[data-theme="dark"] .category-hero,
+[data-theme="dark"] .reviews-section,
+[data-theme="dark"] .review-item,
+[data-theme="dark"] .auth-container,
+[data-theme="dark"] .cart-table,
+[data-theme="dark"] .cart-summary,
+[data-theme="dark"] .payment-form { color: var(--text); }

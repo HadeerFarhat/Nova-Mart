@@ -1,0 +1,58 @@
+/* ===== NovaMart - Original Design System ===== */
+
+/* ===== Header ===== */
+
+/* Nav categories */
+
+/* ===== Hero ===== */
+
+/* ===== Sections ===== */
+
+/* Category Grid */
+
+/* Product Grid */
+
+/* Filters bar */
+
+/* Product Detail */
+
+/* Cart & Wishlist */
+
+/* Auth forms */
+
+.auth-container {
+  max-width: 420px;
+  margin: 40px auto;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow-lg);
+}
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.form-footer a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+
+/* Theme handoff for page-specific legacy rules */
+[data-theme="dark"] .delivery-section,
+[data-theme="dark"] .category-hero,
+[data-theme="dark"] .reviews-section,
+[data-theme="dark"] .review-item,
+[data-theme="dark"] .auth-container,
+[data-theme="dark"] .cart-table,
+[data-theme="dark"] .cart-summary,
+[data-theme="dark"] .payment-form { color: var(--text); }

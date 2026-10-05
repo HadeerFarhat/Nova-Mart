@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category – NovaMart</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d9488'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-size='36' font-family='Arial' font-weight='bold' fill='white'%3EN%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0d9488">
+
+  <link rel="stylesheet" href="css/common.css?v=31">
+  <link rel="stylesheet" href="css/category.css?v=31">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="section category-hero" id="catHero">
+    <div class="container">
+      <div class="cat-hero-inner">
+        <div class="cat-hero-img" id="catHeroImg"></div>
+        <div class="cat-hero-text">
+          <p class="breadcrumb"><a href="index.html" data-i18n="home">Home</a> / <span id="catBreadcrumb">Category</span></p>
+          <h1 id="catTitle">Category</h1>
+          <p id="catCount" class="text-muted"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filters-bar">
+        <div>
+          <label data-i18n="sort_by">Sort by</label>
+          <select id="sortBy" onchange="renderCategoryProducts()">
+            <option value="default" data-i18n="newest">Newest</option>
+            <option value="price-asc" data-i18n="price_low">Price: Low to High</option>
+            <option value="price-desc" data-i18n="price_high">Price: High to Low</option>
+            <option value="rating" data-i18n="rating">Top Rated</option>
+          </select>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div id="noResults" class="empty-state hidden">
+        <div class="icon"><svg class="icon-svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.2 4.2"/></svg></div>
+        <p data-i18n="no_results">No products found</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <div class="toast"></div>
+
+  <script src="assets/products.js?v=31"></script>
+  <script src="assets/en.js"></script>
+  <script src="assets/ar.js"></script>
+  <script src="js/common.js?v=31"></script>
+  <script src="js/category.js?v=31"></script>
+</body>
+</html>

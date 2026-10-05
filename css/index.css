@@ -1,0 +1,544 @@
+/* ===== NovaMart - Original Design System ===== */
+
+/* ===== Header ===== */
+
+/* Nav categories */
+
+/* ===== Hero ===== */
+
+.hero {
+  background: linear-gradient(135deg, #0f172a 0%, #134e4a 50%, #0f766e 100%);
+  color: #fff;
+  padding: 48px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 24px;
+  max-width: 420px;
+}
+
+/* ===== Sections ===== */
+
+/* Category Grid */
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.cat-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 20px 12px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.cat-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.cat-card h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Product Grid */
+
+/* Filters bar */
+
+/* Product Detail */
+
+/* Cart & Wishlist */
+
+/* Auth forms */
+
+/* Checkout */
+
+/* Footer */
+
+/* Empty state */
+
+/* Toast */
+
+/* Modal overlay */
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Utility */
+
+/* ===== Dark Theme ===== */
+
+[data-theme="dark"] .hero {
+  background: linear-gradient(135deg, #0f172a 0%, #134e4a 100%);
+}
+
+/* Clearance badge */
+
+/* Secure payment box */
+
+/* ===== Enhanced Product Cards ===== */
+
+/* Hero polish */
+
+.hero {
+  background: linear-gradient(135deg, #0f172a 0%, #134e4a 45%, #0f766e 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 80%, rgba(20, 184, 166, 0.25) 0%, transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.15) 0%, transparent 35%);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section backgrounds alternating */
+
+/* Footer location highlight */
+
+/* Better category cards */
+
+.cat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 16px;
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.cat-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Dark theme product desc */
+
+/* ===== Side Navigation ===== */
+
+/* ===== Premium Hero ===== */
+
+.hero {
+  background: linear-gradient(135deg, #0b1220 0%, #0f172a 30%, #134e4a 70%, #0f766e 100%);
+  position: relative;
+  overflow: hidden;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 15% 90%, rgba(20, 184, 166, 0.35) 0%, transparent 45%),
+    radial-gradient(ellipse at 85% 15%, rgba(245, 158, 11, 0.2) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.03) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to top, var(--bg), transparent);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 60px 0 80px;
+}
+
+.hero-text h1 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, #fff 0%, #ccfbf1 50%, #fde68a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 14px;
+}
+
+.hero-text p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.85);
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+/* ===== About Page ===== */
+
+/* ===== Delivery Cards ===== */
+
+/* Header layout fix for menu btn */
+
+/* ===== Product Detail Enhanced ===== */
+
+/* Ensure all interactive elements work */
+
+@media (max-width: 768px) {
+  .hero::after {
+    height: 40px;
+  }
+}
+
+/* Clean section backgrounds */
+
+/* Fix logo next to menu */
+
+/* ===== Integrated Sticky Nav ===== */
+
+/* ===== Promo Hero with product collage ===== */
+
+.hero-promo {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.hero-bg-collage {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  opacity: 0.45;
+  transform: scale(1.05);
+}
+
+.hero-collage-item {
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-collage-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.1);
+  transition: transform 8s ease;
+}
+
+.hero-promo:hover .hero-collage-item img {
+  transform: scale(1.08);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(15, 23, 42, 0.92) 0%,
+    rgba(15, 23, 42, 0.75) 40%,
+    rgba(19, 78, 74, 0.7) 100%
+  );
+  pointer-events: none;
+}
+
+.hero-promo .hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 70px 0 80px;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #f59e0b, #ef4444);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  animation: pulse-badge 2s ease infinite;
+}
+
+.hero-promo .hero-text h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(90deg, #fff 0%, #ccfbf1 60%, #fde68a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.hero-promo .hero-text p {
+  color: rgba(255,255,255,0.88);
+  max-width: 540px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.hero-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn-ghost {
+  background: rgba(255,255,255,0.12) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.3) !important;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.22) !important;
+  border-color: #fff !important;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 28px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.hero-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero-stats strong {
+  font-size: 1.4rem;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.hero-stats span {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.65);
+}
+
+/* ===== Category cards with real images ===== */
+
+.cat-grid-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 18px;
+}
+
+.cat-card-img {
+  display: block;
+  background: var(--bg-card);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cat-card-img:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent);
+}
+
+.cat-img-wrap {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #e2e8f0;
+}
+
+.cat-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.cat-card-img:hover .cat-img-wrap img {
+  transform: scale(1.1);
+}
+
+.cat-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15,23,42,0.55) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.cat-card-body {
+  padding: 12px 14px 14px;
+  text-align: center;
+}
+
+.cat-card-body h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+.cat-count {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  .hero-bg-collage {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .hero-promo {
+    min-height: 380px;
+  }
+  .cat-grid-images {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .hero-stats {
+    gap: 16px;
+  }
+}
+
+/* Category page hero */
+
+/* Related products section */
+
+/* Logo always LTR so name never reverses in Arabic */
+
+/* Category images - cover black bars */
+
+.cat-img-wrap img {
+  object-fit: cover;
+  object-position: center;
+  background: #f1f5f9;
+}
+
+[data-theme="dark"] .cat-img-wrap img {
+  background: #1e293b;
+}
+
+/* Qty control force visual order */
+
+/* ===== Professional polish ===== */
+
+/* Script load order note: products → lang/en → lang/ar → app */
+
+/* ===== Sticky navigation bar (header + categories) ===== */
+
+/* Mobile UX */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 320px;
+    padding: 40px 16px;
+  }
+  .hero h1 {
+    font-size: 1.6rem !important;
+  }
+}
+
+/* Smooth interactions */
+
+.cat-card {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cat-img-wrap img {
+  object-fit: cover;
+  background: #f1f5f9;
+}
+
+/* Loading feel */
+
+/* Sticky category strip inside header */
+
+/* ===== Brighter lighting & polish ===== */
+
+.hero {
+  background: linear-gradient(135deg, #0f766e 0%, #134e4a 50%, #1e293b 100%) !important;
+}
+
+.cat-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  box-shadow: var(--shadow);
+}
+
+/* Horizontal swipe feel for category nav */
+
+/* Customer reviews */
+
+[data-theme="dark"] .cat-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+
+/* Theme handoff for page-specific legacy rules */
+[data-theme="dark"] .delivery-section,
+[data-theme="dark"] .category-hero,
+[data-theme="dark"] .reviews-section,
+[data-theme="dark"] .review-item,
+[data-theme="dark"] .auth-container,
+[data-theme="dark"] .cart-table,
+[data-theme="dark"] .cart-summary,
+[data-theme="dark"] .payment-form { color: var(--text); }

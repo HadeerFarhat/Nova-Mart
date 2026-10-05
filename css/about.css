@@ -1,0 +1,219 @@
+/* ===== NovaMart - Original Design System ===== */
+
+/* ===== Header ===== */
+
+/* Nav categories */
+
+/* ===== Hero ===== */
+
+/* ===== Sections ===== */
+
+/* Category Grid */
+
+/* Product Grid */
+
+/* Filters bar */
+
+/* Product Detail */
+
+/* Cart & Wishlist */
+
+/* Auth forms */
+
+/* Checkout */
+
+/* Footer */
+
+/* Empty state */
+
+/* Toast */
+
+/* Modal overlay */
+
+/* Responsive */
+
+/* Utility */
+
+/* ===== Dark Theme ===== */
+
+/* Clearance badge */
+
+/* Secure payment box */
+
+/* ===== Enhanced Product Cards ===== */
+
+/* Hero polish */
+
+/* Section backgrounds alternating */
+
+/* Footer location highlight */
+
+/* Better category cards */
+
+/* Dark theme product desc */
+
+/* ===== Side Navigation ===== */
+
+/* ===== Premium Hero ===== */
+
+/* ===== About Page ===== */
+
+.about-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #134e4a 60%, #0f766e 100%);
+  color: #fff;
+  padding: 70px 0 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 70%, rgba(20,184,166,0.3), transparent 50%);
+}
+
+.about-hero h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.about-tagline {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  opacity: 0.9;
+  position: relative;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.about-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-lg);
+}
+
+.about-icon {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.about-card h3 {
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+/* ===== Delivery Cards ===== */
+
+.delivery-section {
+  background: linear-gradient(180deg, transparent, rgba(20,184,166,0.04), transparent);
+}
+
+.delivery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.delivery-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+  position: relative;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.delivery-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.delivery-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.delivery-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.delivery-card h3 {
+  margin-bottom: 10px;
+}
+
+.delivery-card p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.showroom-loc {
+  font-weight: 600;
+  color: var(--accent) !important;
+  margin-bottom: 12px !important;
+}
+
+.delivery-points {
+  text-align: start;
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.9;
+}
+
+.delivery-points li {
+  padding: 2px 0;
+}
+
+
+.about-icon, .delivery-icon { display:flex; align-items:center; justify-content:center; }
+.about-icon .icon-svg, .delivery-icon .icon-svg { width:38px; height:38px; }
+@media (max-width: 768px) {
+  .about-hero h1 { font-size: 2rem; }
+  .delivery-card { padding: 24px 18px; }
+}
+
+
+/* Theme handoff for page-specific legacy rules */
+[data-theme="dark"] .delivery-section,
+[data-theme="dark"] .category-hero,
+[data-theme="dark"] .reviews-section,
+[data-theme="dark"] .review-item,
+[data-theme="dark"] .auth-container,
+[data-theme="dark"] .cart-table,
+[data-theme="dark"] .cart-summary,
+[data-theme="dark"] .payment-form { color: var(--text); }

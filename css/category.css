@@ -1,0 +1,165 @@
+/* ===== NovaMart - Original Design System ===== */
+
+/* ===== Header ===== */
+
+/* Nav categories */
+
+/* ===== Hero ===== */
+
+/* ===== Sections ===== */
+
+/* Category Grid */
+
+/* Product Grid */
+
+/* Filters bar */
+
+/* Product Detail */
+
+/* Cart & Wishlist */
+
+/* Auth forms */
+
+/* Checkout */
+
+/* Footer */
+
+/* Empty state */
+
+/* Toast */
+
+/* Modal overlay */
+
+/* Responsive */
+
+/* Utility */
+
+/* ===== Dark Theme ===== */
+
+/* Clearance badge */
+
+/* Secure payment box */
+
+/* ===== Enhanced Product Cards ===== */
+
+/* Hero polish */
+
+/* Section backgrounds alternating */
+
+/* Footer location highlight */
+
+/* Better category cards */
+
+/* Dark theme product desc */
+
+/* ===== Side Navigation ===== */
+
+/* ===== Premium Hero ===== */
+
+/* ===== About Page ===== */
+
+/* ===== Delivery Cards ===== */
+
+/* Header layout fix for menu btn */
+
+/* ===== Product Detail Enhanced ===== */
+
+/* Ensure all interactive elements work */
+
+/* Clean section backgrounds */
+
+/* Fix logo next to menu */
+
+/* ===== Integrated Sticky Nav ===== */
+
+/* ===== Promo Hero with product collage ===== */
+
+/* ===== Category cards with real images ===== */
+
+/* Category page hero */
+
+.category-hero {
+  padding: 24px 0 8px;
+  background: linear-gradient(180deg, #f0fdfa 0%, var(--bg) 100%);
+}
+
+[data-theme="dark"] .category-hero {
+  background: linear-gradient(180deg, #134e4a44 0%, var(--bg) 100%);
+}
+
+.cat-hero-inner {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  align-items: center;
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.cat-hero-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #e2e8f0;
+}
+
+.cat-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.breadcrumb {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.cat-hero-text h1 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin-bottom: 6px;
+}
+
+@media (max-width: 600px) {
+  .cat-hero-inner {
+    grid-template-columns: 100px 1fr;
+    gap: 14px;
+    padding: 14px;
+  }
+  .cat-hero-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Related products section */
+
+/* Logo always LTR so name never reverses in Arabic */
+
+/* Category images - cover black bars */
+
+.cat-hero-img img {
+  object-fit: cover;
+  object-position: center;
+  background: #f1f5f9;
+}
+
+
+/* Theme handoff for page-specific legacy rules */
+[data-theme="dark"] .delivery-section,
+[data-theme="dark"] .category-hero,
+[data-theme="dark"] .reviews-section,
+[data-theme="dark"] .review-item,
+[data-theme="dark"] .auth-container,
+[data-theme="dark"] .cart-table,
+[data-theme="dark"] .cart-summary,
+[data-theme="dark"] .payment-form { color: var(--text); }

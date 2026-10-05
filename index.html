@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaMart – Premium Marketplace | الجيزة</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d9488'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-size='36' font-family='Arial' font-weight='bold' fill='white'%3EN%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0d9488">
+
+  <link rel="stylesheet" href="css/common.css?v=31">
+  <link rel="stylesheet" href="css/index.css?v=31">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <!-- Promo Hero with product images -->
+  <section class="hero hero-promo">
+    <div class="hero-bg-collage" id="heroCollage"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-badge" data-i18n="offers">Special Offers</span>
+        <h1 data-i18n="welcome">Welcome to NovaMart</h1>
+        <p data-i18n="hero_sub">Based in Giza, Egypt. Discover premium fashion, home, tech and more. Original quality, fast delivery.</p>
+        <div class="hero-btns">
+          <a href="#offers" class="btn btn-primary" data-i18n="offers">Special Offers</a>
+          <a href="#categories" class="btn btn-ghost" data-i18n="categories">Categories</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong id="statProducts">383</strong><span data-i18n="all_products">Products</span></div>
+          <div><strong>30%</strong><span data-i18n="clearance">Clearance</span></div>
+          <div><strong>Giza</strong><span data-i18n="location">HQ</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories with real images -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="categories">Categories</h2>
+        <p class="section-sub" data-i18n="choose_delivery" style="opacity:0.7;font-size:0.95rem"></p>
+      </div>
+      <div class="cat-grid cat-grid-images" id="catGrid"></div>
+    </div>
+  </section>
+
+  <!-- Offers -->
+  <section class="section" id="offers">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="offers">Special Offers</h2>
+      </div>
+      <div class="product-grid" id="offersGrid"></div>
+    </div>
+  </section>
+
+  <!-- Clearance -->
+  <section class="section" id="clearance">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="clearance">Clearance Sale</h2>
+      </div>
+      <div class="product-grid" id="clearanceGrid"></div>
+    </div>
+  </section>
+
+  <!-- All Products -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="productsTitle" data-i18n="all_products">All Products</h2>
+        <span id="resultsCount" class="text-muted"></span>
+      </div>
+
+      <div class="filters-bar">
+        <div>
+          <label data-i18n="filter">Filter</label>
+          <select id="filterCat" onchange="applyFilters()">
+          </select>
+        </div>
+        <div>
+          <label data-i18n="sort_by">Sort by</label>
+          <select id="sortBy" onchange="applyFilters()">
+            <option value="default" data-i18n="newest">Newest</option>
+            <option value="price-asc" data-i18n="price_low">Price: Low to High</option>
+            <option value="price-desc" data-i18n="price_high">Price: High to Low</option>
+            <option value="rating" data-i18n="rating">Top Rated</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+      <div id="noResults" class="empty-state hidden">
+        <div class="icon"><svg class="icon-svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.2 4.2"/></svg></div>
+        <p data-i18n="no_results">No products found</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <div class="toast"></div>
+
+  <script src="assets/products.js?v=31"></script>
+  <script src="assets/en.js"></script>
+  <script src="assets/ar.js"></script>
+  <script src="js/common.js?v=31"></script>
+  <script src="js/index.js?v=31"></script>
+</body>
+</html>
